@@ -18,11 +18,46 @@ Release is made up of:
 Functioning features that may change.
 Enable in IntelliJ with Project Settings -> Project -> Language Level -> 21 (Preview)
 
+### [JEP 445](https://openjdk.org/jeps/445) Unnamed Classes and Instance Main Methods
+- [UnnamedClass.java](src/preview/UnnamedClass.java)
+
 ## Final features
 
-### Pattern matching for switch
-[JEP 441](https://openjdk.org/jeps/441)
+### [JEP 441](https://openjdk.org/jeps/441) Pattern matching for switch
+Clearer code instead of using instanceof in if else statement
+- [PatternMatchingForSwitch.java](src/finalfeature/PatternMatchingForSwitch.java)
 
-[PatternMatchingForSwitch.java](src/PatternMatchingForSwitch.java)
+### [JEP 431](https://openjdk.org/jeps/431) Sequenced Collections
+Easier to work with ordered collections
+- [SequencedCollections.java](src/finalfeature/SequencedCollections.java)
+
+### [JEP 440](https://openjdk.org/jeps/440) Record Patterns
+Easier way of extracting data from Java records
+- [RecordPatterns.java](src/finalfeature/RecordPatterns.java)
+
+### [JEP 439](https://openjdk.org/jeps/439)
+Optimised ZGC garbage collection performance across all scales of Java applications (from small to large heaps).
+- Split into Young Generation (new objects) and Old Generation (longer living objects moved over from Young after being scanned x times)
+- Young Generation heap is scanned more often during GC
+- ``` java -XX:+UseZGC -XX:+ZGenerational ... ```
+- Eventually will become default GC
+
+### [JEP 444](https://openjdk.org/jeps/444) Virtual Threads
+- [VirtualThreads.java](src/finalfeature/VirtualThreads.java)
+
+### [JEP 449](https://openjdk.org/jeps/449) Deprecate the Windows 32-bit x86 Port for Removal
+- [.java](src/.java)
+
+### [JEP 451](https://openjdk.org/jeps/451) Prepare to Disallow the Dynamic Loading of Agents
+- [.java](src/.java)
+
+### [JEP 452](https://openjdk.org/jeps/) Key Encapsulation Mechanism API
+- [.java](src/.java)
 
 
+
+	
+	
+	
+ 
+	
