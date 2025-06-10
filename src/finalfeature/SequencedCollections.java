@@ -20,7 +20,7 @@ public class SequencedCollections {
     list.addLast("C");
     System.out.println(list);
 
-    System.out.println(list.reversed());
+    System.out.println("Reversed: " + list.reversed());
 
     list.removeFirst();
     list.removeLast();
@@ -35,7 +35,7 @@ public class SequencedCollections {
     set.addFirst("A");
     set.addLast("C");
     System.out.println(set);
-    System.out.println(set.reversed());
+    System.out.println("Reversed: " + set.reversed());
 
     set.removeFirst();
     System.out.println(set);
@@ -60,6 +60,10 @@ public class SequencedCollections {
 
     System.out.println("pollFirstEntry: " + map.pollFirstEntry());
     System.out.println(map);
+
+    System.out.println("pollLastEntry: " + map.pollLastEntry());
+    System.out.println("pollLastEntry: " + map.pollLastEntry());
+    System.out.println("pollLastEntry: " + map.pollLastEntry());
   }
 
 }

@@ -3,6 +3,10 @@ package finalfeature;
 import java.util.ArrayList;
 
 public class RecordPatterns {
+
+  record Car(String make, String model) {}
+  record Person(String firstName, String lastName, Car car) {}
+
   void main(String[] args) {
     Car car1 = new Car("Audi", "A4");
     // Nested record
@@ -31,6 +35,4 @@ public class RecordPatterns {
     }
   }
 
-  record Person(String firstName, String lastName, Car car) {}
-  record Car(String make, String model) {}
 }
